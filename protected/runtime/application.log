@@ -1,0 +1,250 @@
+2014/03/19 22:54:43 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/YiiBase.php:322
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWidgetFactory.php(146): YiiBase::import('application.com...', true)
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(172): CBaseController->createWidget('application.com...', Array)
+#3 /Users/caleb.hurd/Documents/sites/hemp/themes/fistful/views/layouts/main_sbar.php(44): CBaseController->widget('application.com...', Array)
+#4 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/Users/caleb.hu...')
+#5 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/caleb.hu...', Array, true)
+#6 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/caleb.hu...', Array, true)
+#7 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="art...')
+#8 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="art...')
+#9 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /Users/caleb.hurd/Documents/sites/hemp/themes/fistful/views/layouts/column2.php(9): CBaseController->endContent()
+#12 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/Users/caleb.hu...')
+#13 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/caleb.hu...', Array, true)
+#14 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(784): CBaseController->renderFile('/Users/caleb.hu...', Array, true)
+#15 /Users/caleb.hurd/Documents/sites/hemp/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#21 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#22 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2014/03/19 23:34:08 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "contact".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:878
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#1 /Users/caleb.hurd/Documents/sites/hemp/protected/controllers/SiteController.php(72): CController->render('contact', Array)
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('contact')
+#7 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#8 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/site/contact
+---
+2014/03/20 11:23:48 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/YiiBase.php:322
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWidgetFactory.php(146): YiiBase::import('application.com...', true)
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(VendorsController), 'application.com...', Array)
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(172): CBaseController->createWidget('application.com...', Array)
+#3 /Users/caleb.hurd/Documents/sites/hemp/themes/fistful/views/layouts/main_sbar.php(44): CBaseController->widget('application.com...', Array)
+#4 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/Users/caleb.hu...')
+#5 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/caleb.hu...', Array, true)
+#6 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/caleb.hu...', Array, true)
+#7 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="art...')
+#8 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="art...')
+#9 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /Users/caleb.hurd/Documents/sites/hemp/themes/fistful/views/layouts/column2.php(9): CBaseController->endContent()
+#12 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/Users/caleb.hu...')
+#13 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/caleb.hu...', Array, true)
+#14 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(784): CBaseController->renderFile('/Users/caleb.hu...', Array, true)
+#15 /Users/caleb.hurd/Documents/sites/hemp/protected/controllers/VendorsController.php(143): CController->render('admin', Array)
+#16 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): VendorsController->actionAdmin()
+#17 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(291): CFilterChain->run()
+#24 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('admin')
+#26 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('vendors/admin')
+#27 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/vendors/admin
+---
+2014/03/20 22:24:23 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.isAdmin" is not defined.' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/auth/CWebUser.php(146): CComponent->__get('isAdmin')
+#1 /Users/caleb.hurd/Documents/sites/hemp/protected/views/layouts/main.php(36): CWebUser->__get('isAdmin')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/Users/caleb.hu...')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/caleb.hu...', Array, true)
+#4 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/caleb.hu...', Array, true)
+#5 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /Users/caleb.hurd/Documents/sites/hemp/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(126): require('/Users/caleb.hu...')
+#11 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/caleb.hu...', Array, true)
+#12 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(784): CBaseController->renderFile('/Users/caleb.hu...', Array, true)
+#13 /Users/caleb.hurd/Documents/sites/hemp/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('')
+#19 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php
+---
+2014/03/20 22:32:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "see_vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('see_vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('see_vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/see_vendor...')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/see_vendors
+HTTP_REFERER=http://hemp/index.php/site/page?view=about
+---
+2014/03/20 22:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "see_vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('see_vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('see_vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/see_vendor...')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/see_vendors
+HTTP_REFERER=http://hemp/index.php/site/page?view=about
+---
+2014/03/20 22:36:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "see_vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('see_vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('see_vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/see_vendor...')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/see_vendors
+---
+2014/03/20 22:36:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "see_vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('see_vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('see_vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/see_vendor...')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/see_vendors
+---
+2014/03/20 22:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendors
+HTTP_REFERER=http://hemp/index.php/site/page?view=see_vendors
+---
+2014/03/20 22:57:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendor".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendor')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendor')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendor')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendor
+---
+2014/03/20 22:58:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendors
+HTTP_REFERER=http://hemp/index.php/site/vendor
+---
+2014/03/20 22:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendors
+HTTP_REFERER=http://hemp/index.php/site/vendors
+---
+2014/03/20 22:58:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/site/vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('page/site/vendo...')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/page/site/vendors
+---
+2014/03/20 22:58:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendors
+---
+2014/03/20 22:58:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendors
+---
+2014/03/20 23:00:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('Vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('Vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/Vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/Vendors
+---
+2014/03/20 23:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendors
+HTTP_REFERER=http://hemp/index.php/site/Vendors
+---
+2014/03/20 23:00:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendors".' in /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php:483
+Stack trace:
+#0 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CController.php(270): CController->missingAction('vendors')
+#1 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(282): CController->run('vendors')
+#2 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/web/CWebApplication.php(141): CWebApplication->runController('site/vendors')
+#3 /Users/caleb.hurd/Documents/sites/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/caleb.hurd/Documents/sites/hemp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/vendors
+HTTP_REFERER=http://hemp/index.php/site/page?view=see_vendors
+---
